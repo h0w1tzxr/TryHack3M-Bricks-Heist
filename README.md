@@ -188,7 +188,7 @@ The writeup covers the entire attack chain and investigation:
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║                              ⚠️  WARNING  ⚠️                                 ║
+║                              ⚠️  WARNING  ⚠️                                ║
 ╠══════════════════════════════════════════════════════════════════════════════╣
 ║                                                                              ║
 ║  This repository is for EDUCATIONAL and AUTHORIZED SECURITY TESTING only.    ║
