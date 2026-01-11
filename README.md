@@ -1,4 +1,4 @@
-# 🧱 TryHack3M: Bricks Heist
+# TryHack3M: Bricks Heist
 
 <div align="center">
 
@@ -9,17 +9,17 @@
 
 <br />
 
-**🔓 Exploit • 📝 Writeup • 🎯 CTF Challenge**
+**Exploit • Writeup • CTF Challenge**
 
 *A comprehensive repository containing a custom exploit and detailed writeup for the TryHack3M: Bricks Heist challenge*
 
 <br />
 
-[🚀 Quick Start](#-quick-start) •
-[📁 Repository Structure](#-repository-structure) •
-[🔥 The Exploit](#-the-exploit) •
-[📖 The Writeup](#-the-writeup) •
-[⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+[Quick Start](#quick-start) •
+[Repository Structure](#repository-structure) •
+[The Exploit](#the-exploit) •
+[The Writeup](#the-writeup) •
+[Disclaimer](#disclaimer)
 
 ---
 
@@ -31,47 +31,47 @@
 
 ---
 
-## 🎯 Overview
+## Overview
 
 This repository documents the **TryHack3M: Bricks Heist** challenge — a medium-difficulty CTF room involving:
 
 | Phase | Description |
 |:-----:|-------------|
-| 🔍 | **Reconnaissance** — Discovering a vulnerable WordPress site with Bricks Builder |
-| 💥 | **Exploitation** — Leveraging CVE-2024-25600 for unauthenticated RCE |
-| 🔎 | **Investigation** — Uncovering a hidden crypto miner linked to **LockBit** ransomware |
-| 🏆 | **Attribution** — Tracing Bitcoin transactions to sanctioned threat actors |
+| **Reconnaissance** | Discovering a vulnerable WordPress site with Bricks Builder |
+| **Exploitation** | Leveraging CVE-2024-25600 for unauthenticated RCE |
+| **Investigation** | Uncovering a hidden crypto miner linked to **LockBit** ransomware |
+| **Attribution** | Tracing Bitcoin transactions to sanctioned threat actors |
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 TryHack3M-Bricks-Heist/
 │
-├── 📄 README.md              ← You are here
+├── README.md              ← You are here
 │
-├── 📂 Exploit/
-│   ├── 📄 README.md          ← Detailed exploit documentation
-│   ├── 🐍 brickbreaker.py    ← The exploit tool
-│   └── 📄 requirements.txt   ← Python dependencies
+├── Exploit/
+│   ├── README.md          ← Detailed exploit documentation
+│   ├── brickbreaker.py    ← The exploit tool
+│   └── requirements.txt   ← Python dependencies
 │
-└── 📂 WriteUp/
-    └── 📄 WRITEUP.md         ← Full challenge walkthrough
+└── WriteUp/
+    └── WRITEUP.md         ← Full challenge walkthrough
 ```
 
 <div align="center">
 
 | Directory | Contents | Link |
 |:---------:|----------|:----:|
-| **Exploit/** | BrickBreaker v2.2 — Custom CVE-2024-25600 exploit with interactive shell | [📖 Read More](Exploit/README.md) |
-| **WriteUp/** | Complete step-by-step walkthrough with screenshots and answers | [📖 Read More](WriteUp/WRITEUP.md) |
+| **Exploit/** | BrickBreaker v2.2 — Custom CVE-2024-25600 exploit with interactive shell | [Read More](Exploit/README.md) |
+| **WriteUp/** | Complete step-by-step walkthrough with screenshots and answers | [Read More](WriteUp/WRITEUP.md) |
 
 </div>
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Get a Shell in 30 Seconds
 
@@ -90,11 +90,11 @@ python3 brickbreaker.py https://target.com
 
 ### Read the Full Writeup
 
-Jump straight to the [📖 Complete Writeup](WriteUp/WRITEUP.md) to see how the challenge was solved from start to finish.
+Jump straight to the [Complete Writeup](WriteUp/WRITEUP.md) to see how the challenge was solved from start to finish.
 
 ---
 
-## 🔥 The Exploit
+## The Exploit
 
 <div align="center">
 
@@ -106,12 +106,12 @@ Jump straight to the [📖 Complete Writeup](WriteUp/WRITEUP.md) to see how the 
 
 | Feature | Description |
 |:-------:|-------------|
-| 🎯 | **Auto-exploitation** — Extracts nonce and exploits automatically |
-| 🐚 | **Interactive Shell** — Full PTY-like experience with history |
-| 📁 | **File Transfer** — Upload/download files via base64 |
-| 🔄 | **Reverse Shells** — 5 payload types (bash, python, nc, php, perl) |
-| 🔍 | **Batch Scanner** — Mass vulnerability scanning |
-| 🎨 | **Beautiful TUI** — Rich terminal interface |
+| **Auto-exploitation** | Extracts nonce and exploits automatically |
+| **Interactive Shell** | Full PTY-like experience with history |
+| **File Transfer** | Upload/download files via base64 |
+| **Reverse Shells** | 5 payload types (bash, python, nc, php, perl) |
+| **Batch Scanner** | Mass vulnerability scanning |
+| **Beautiful TUI** | Rich terminal interface |
 
 ```
  ██████╗ ██████╗ ██╗ ██████╗██╗  ██╗    ██████╗ ██████╗ ███████╗ █████╗ ██╗  ██╗███████╗██████╗ 
@@ -124,13 +124,13 @@ Jump straight to the [📖 Complete Writeup](WriteUp/WRITEUP.md) to see how the 
 
 <div align="center">
 
-**[📖 Full Exploit Documentation →](Exploit/README.md)**
+**[Full Exploit Documentation →](Exploit/README.md)**
 
 </div>
 
 ---
 
-## 📖 The Writeup
+## The Writeup
 
 <div align="center">
 
@@ -144,11 +144,11 @@ The writeup covers the entire attack chain and investigation:
 
 | Phase | What You'll Learn |
 |:-----:|-------------------|
-| **🔍 Recon** | Port scanning, WordPress enumeration, identifying Bricks Builder |
-| **💥 Exploit** | Using BrickBreaker to gain initial access via CVE-2024-25600 |
-| **🔎 Forensics** | Discovering hidden files, malicious services, and crypto miners |
-| **💰 Blockchain** | Decoding obfuscated wallet addresses and tracing transactions |
-| **🎯 Attribution** | Linking activity to the **LockBit** ransomware group via OFAC |
+| **Reconnaissance** | Port scanning, WordPress enumeration, identifying Bricks Builder |
+| **Exploitation** | Using BrickBreaker to gain initial access via CVE-2024-25600 |
+| **Forensics** | Discovering hidden files, malicious services, and crypto miners |
+| **Blockchain** | Decoding obfuscated wallet addresses and tracing transactions |
+| **Attribution** | Linking activity to the **LockBit** ransomware group via OFAC |
 
 ### Challenge Answers Preview
 
@@ -163,13 +163,13 @@ The writeup covers the entire attack chain and investigation:
 
 <div align="center">
 
-**[📖 Read Full Writeup →](WriteUp/WRITEUP.md)**
+**[Read Full Writeup →](WriteUp/WRITEUP.md)**
 
 </div>
 
 ---
 
-## 🛠️ Tools & Technologies
+## Tools & Technologies
 
 <div align="center">
 
@@ -184,11 +184,11 @@ The writeup covers the entire attack chain and investigation:
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║                              ⚠️  WARNING  ⚠️                                ║
+║                                  WARNING                                     ║
 ╠══════════════════════════════════════════════════════════════════════════════╣
 ║                                                                              ║
 ║  This repository is for EDUCATIONAL and AUTHORIZED SECURITY TESTING only.    ║
@@ -203,7 +203,7 @@ The writeup covers the entire attack chain and investigation:
 
 ---
 
-## 📚 References
+## References
 
 | Resource | Link |
 |----------|------|
@@ -215,13 +215,13 @@ The writeup covers the entire attack chain and investigation:
 
 ---
 
-## 🙏 Credits
+## Credits
 
 <div align="center">
 
 | Role | Credit |
 |:----:|--------|
-| **Author** | [Constantines](https://github.com/h0w1tzxr) |
+| **Author** | [constantines](https://github.com/h0w1tzxr) |
 | **Vulnerability Discovery** | [Snicco Security](https://snicco.io) |
 | **Original PoC** | [Chocapikk](https://github.com/Chocapikk/CVE-2024-25600) |
 | **Challenge** | [TryHackMe](https://tryhackme.com) |
@@ -232,7 +232,7 @@ The writeup covers the entire attack chain and investigation:
 
 <div align="center">
 
-### ⭐ Star this repo if you found it useful!
+### Star this repository if you found it useful
 
 <br />
 
@@ -242,8 +242,8 @@ The writeup covers the entire attack chain and investigation:
 
 <br />
 
-**Made with ❤️ by Constantines**
+**Created by constantines**
 
-<sub>*Happy Hacking! 🎯*</sub>
+<sub>*Happy Hacking!*</sub>
 
 </div>
